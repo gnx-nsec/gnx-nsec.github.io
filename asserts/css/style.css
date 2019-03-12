@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* To  disable the navbar button*/
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+}
+
+/*Navigation*/
+.navbar{
+    background: #222222 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+nav ul li a{
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.7;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+}
+nav ul li a:hover{
+    color:#fff;
+    text-decoration: none;
+    opacity: 1;
+    transform: scale(1.10);
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    left: 4px;
+    top: 20px;
+    bottom: 20px;
+    margin:20px auto;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+nav ul li a:hover::after{
+    transform: scale(1);
+}
+nav ul li a.active{
+  color:#fff;
+  background: transparent;
+  text-decoration: none;
+  opacity: 1;
+}
+nav ul li a.active::after{
+  transform: scale(1);
+}
+.navbar-toggler{
+    background-color: transparent !important;
+}
+.navbar-brand{
+    color:#fff !important;
+}
+
+/*Toggle bar*/
+.btn-open:after{
+	font-family: "FontAwesome";
+    content: "\f0c9";
+    font-size: 40px;
+	color:white;
+	transition: color .2s;
+}
+.btn-open:hover:after{
+	color:#fff;
+    opacity: 1;
+}
+.btn-close:after{
+	font-family: "FontAwesome";
+    content: "\f00d";
+    font-size: 40px;
+    color:white;
+    opacity: 0.7;
+	transition: color .2s;
+}
+.btn-close:hover:after{
+    color:#fff;
+    opacity: 1;
+}
+p{
+  text-align: left;
+}
+/*...hr tag style...*/
+.style-one{
+    width:25%;
+      margin: 5px auto;
+
+    background:black;
+}
+.style-two{
+    width:50%;
+    margin: 5px auto;
+    height: 1px;
+    background:#222222;
+}
+/*Home*/
+.header{
+
+    display: cover;
+    min-height: 100vh;
+    max-height: auto;
+    width: 100%;
+    padding: 30px 0 30px;
+    text-align: center;
+    overflow: auto;
+
+}
+.header .header-content{
+    margin-top: 10%;
+}
+#pt{
+  font-size: 15px;
+  font-weight: 100;
+  opacity: .7;
+}
+#qhead{
+  color:#1e90ff;
+}
+#cardText{
+  color: black;
+}
+/*About*/
+#About{
+    overflow: auto;
+    padding: 73px 20px;
+    position: relative;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+#About img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    transform: scale(1);
+}
+#About img:hover {
+    transform: scale(1.1);
+}
+/*Event*/
+.Event{
+  overflow: auto;
+  padding: 73px 20px;
+  position: relative;
+  text-align: center;
+}
+/*Team*/
+.team{
+    overflow: auto;
+
+    padding: 73px 20px;
+    position: relative;
+    text-align: center;
+}
+.my_card, .my_card_co{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.team b,
+.team h4{
+    margin:20px 0 20px;
+    color: #4c4c4c;
+}
+.team img{
+    height: 125px;
+    width: 125px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    transform: scale(1);
+}
+.my_card_co img{
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  transform: scale(1);
+}
+.team img:hover{
+    transform: scale(1.05);
+}
+/*  carousel */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 25px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 25px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev{
+  left:2%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 2%;
+
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* carousel */
+/*footer*/
+.footer{
+  padding: 10px;
+  color:#fff;
+  text-align: center;
+  background-color:#222222;
+}
+.footer .social{
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.footer a{
+  display: inline-block;
+  text-decoration: none;
+  color:#3077b9;
+  padding: 0px;
+  margin: 0;
+  transition: 0.3s;
+  transform: scale(1);
+}
+.footer a:hover{
+  color:rgb(216, 211, 211);
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.footer p{
+  margin-bottom: 0 !important;
+}
+footer{
+  font-size: 20px;
+  font-family: 'Ubuntu', serif;
+  color:rgb(192,192,192);
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+}
+footer span{
+  color: lightblue;
+  filter: brightness(100%);
+}
