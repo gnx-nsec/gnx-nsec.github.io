@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="asserts/css/style.css">
     <link rel="stylesheet" href="asserts/css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="asserts/css/libs/animate.min.css">
+    <link rel="stylesheet" href="asserts/js/libs/slider/skdslider.css">
     <link rel="stylesheet" href="asserts/css/libs/font-awesome-4.7.0/css/font-awesome.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body style="font-family: 'Ubuntu', serif;">
     <!--Navigation bar....Start-->
@@ -25,8 +26,8 @@
                   <li class="nav-item mx-auto"><a href="#Home" class="nav-link">Home</a></li>
                   <li class="nav-item mx-auto"><a href="#Event" class="nav-link">Event</a></li>
                   <li class="nav-item mx-auto"><a href="#About" class="nav-link">About Us</a></li>
-                  <li class="nav-item mx-auto"><a href="#Gallery" class="nav-link">Gallery</a></li>
                   <li class="nav-item mx-auto"><a href="#Team" class="nav-link">Our Team</a></li>
+                  <li class="nav-item mx-auto"><a href="#Gallery" class="nav-link">Gallery</a></li>
               </ul>
           </div>
       </div>
@@ -40,10 +41,10 @@
                   <img style="border-radius:50%;height:220px;width:220px" src="asserts/images/logo.jpg" alt="logo">
             </div>
             <div class="col-lg-8 col-md-8 header-content" id="intro">
-                <h1 style="color:black;font-weight:bold" class="text-center">GNX : GNX's Not niXal</h1><hr>
-                <h4 style="color:black" class="text-center">Official Linux User Group<br></h4>
-                <h5 style="color:black" >Netaji Subhash Engineering College</h5>
-                <br><a href="#About"><button style="background:rgba(25, 181, 254, 1)" class="btn btn-lg btn-info">Know more</button></a><br><br>
+                <h1 style="color:#ec9316;font-weight:bold" class="text-center">GNX : GNX's Not niXal</h1>
+                <h4 style="color:#f2bf4e" class="text-center">Official Linux User Group<br></h4>
+                <h5 style="color:#fcef26" >Netaji Subhash Engineering College</h5>
+                <br><a href="#About"><button class="my-btn">Know more</button></a><br><br>
                 <div class="text-center"><a href="https://www.facebook.com/GNXnsec/"><i style="font-size:30px" class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/gnx-nsec"><i style="font-size:30px" class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href=""><i style="font-size:30px" class="fa fa-mail" aria-hidden="true"></i></a></div>
                 <br>
             </div>
@@ -55,12 +56,12 @@
      <!--Event Section-->
     <div class="Event scrolling" id="Event">
       <div class="container">
-        <h1 style="color:rgba(25, 181, 254, 1)" data-aos="flip-down" class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> Upcoming Event<h1><hr>
+        <h1 style="color:#ec9316" data-aos="flip-down" class="text-center"><i class="fa fa-calendar" aria-hidden="true"></i> Upcoming Event</h1>
         <div class="row">
           <div class="col-lg-12 col-md-12">
             <p class="text-center">Hey There, <b>Why Are You Waiting?</b> Click the below button and confirm your sit. Good Luck There!</p>
             <h3 class="text-center" style="color:rgb(204, 33, 33);">Our Next Event on - <i>March, 2019</i></h3><!--ONLY '<i>' IS CHANGABLE -->
-            <a  target="_blank" href="" class="text-center btn btn-primary btn-lg">Apply Now</a>
+            <a  target="_blank" href="" class="text-center"><button class="my-btn">Apply Now</button></a>
           </div>
         </div>
       </div>
@@ -70,7 +71,7 @@
     <!--About Us start-->
     <div class="About scrolling" id="About">
       <div class="container">
-        <h1 style="color:rgba(25, 181, 254, 1)" data-aos="flip-down" class="text-center"><i class="fa fa-info-circle" aria-hidden="true"></i> ABOUT US<h1><hr>
+        <h1 style="color:#ec9316" data-aos="flip-down" class="text-center"><i class="fa fa-info-circle" aria-hidden="true"></i> ABOUT US</h1>
         <div class="row">
           <div class="col-lg-12 col-md-12">
               <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/TUX_G2.svg/163px-TUX_G2.svg.png" alt="logo">
@@ -79,337 +80,271 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
               <h3 id="qhead" data-aos="fade-left" class="text-left"><i class="fa fa-question-circle" aria-hidden="true"></i> Who are we?</h3>
-              <p id="pt">GNX is the official GNU/Linux User Group of <strong><i>Netaji Subhash Engineering College</i></strong>, a community of linux loving & open-source enthusiastic people.<br><br>By the way,why 'GNX's Not niXal'?, well it has a pretty interesting story behind it! ;)</p>
+              <p id="pt">
+                <b>GNX</b> is the official GNU/Linux User Group of 
+                <i><b>Netaji Subhash Engineering College</b></i>,a community of linux loving & open-source enthusiastic people.
+              </p>
+              <p id="pt">
+                By the way,why 'GNX's Not niXal'?, well it has a pretty interesting story behind it! ;)
+              </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12">
               <h3 id="qhead" data-aos="fade-left" class="text-left"><i class="fa fa-question-circle" aria-hidden="true"></i> What made us form this group?</h3>
-              <p id="pt">GNX was founded in 2018 with the aim of providing support to the individuals for contributing to opensouce and gaining knowledge about Linux.Our main motto is to promote the adoption of Linux, encourage others to actively contribute to the opensouce projects and build a helpful community of like-minded people.</p>
+              <p id="pt">
+                <b>GNX</b> was founded in 2018 with the aim of providing support to the individuals for contributing to opensouce and gaining knowledge about Linux.Our main motto is to promote the adoption of Linux, encourage others to actively contribute to the opensouce projects and build a helpful community of like-minded people.
+              </p>
             </div>
           </div>
         <div class="row">
           <div class="col-lg-12 col-md-12">
             <h3 id="qhead" data-aos="fade-left" class="text-left"><i class="fa fa-question-circle" aria-hidden="true"></i> What drives us?</h3>
-            <p id="pt">Contributing to opensouce has a lot of benefits, it can really boost the learning and programming experience of a developer very quickly.An opensouce developer always gets an edge over the other developers.So promoting the opensouce culture is what that propels this group.<br><br>GNX also offers guidance and support to the developers for the various <i>paid summer of code</i> programmes.</p>
+            <p id="pt">Contributing to opensouce has a lot of benefits, it can really boost the learning and programming experience of a developer very quickly.An opensouce developer always gets an edge over the other developers.So promoting the opensouce culture is what that propels this group.<br><br><b>GNX</b> also offers guidance and support to the developers for the various <i>paid summer of code</i> programmes.</p>
           </div>
         </div>
        </div>
     </div><hr>
     <!-- About us end-->
-    <!-- Gallery start-->
-    <div id="Gallery" class="scrolling" style="background: lack"><br><br><br>
-      <div class="container">
-
-      <h1 style="color:rgba(25, 181, 254, 1)" data-aos="flip-down" class="text-center"><i class="fa fa-image" aria-hidden="true"></i> GALLERY<h1><hr>
-      <!-- Slideshow container -->
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-          <div class="numbertext"></div>
-            <img src="asserts/images/gallery/linux_image.jpg" style="width:100%;height:400px">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2/3</div>
-            <img src="asserts/images/gallery/penguinFace.jpg" style="width:100%;height:400px">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3/3</div>
-            <img src="asserts/images/deskPic.png" style="width:100%;height:400px">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext"></div>
-            <img src="asserts/images/gallery/linux_image.jpg" style="width:100%;height:400px">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext"></div>
-            <img src="asserts/images/gallery/penguinFace.jpg" style="width:100%;height:400px">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext"></div>
-            <img src="asserts/images/deskPic.png" style="width:100%;height:400px">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Image text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-      </div>
-    </div>
-    <!--- Gallery end-->
 
     <!-- Team start-->
     <!--Core Team-->
-    <div style="color:rgba(25, 181, 254, 1)" id="Team" class="team scrolling">
-      <div class="container" style="background:rgba(25, 181, 254, 0.1)"><br>
-        <h2 data-aos="flip-down" class="text-center"><i class="fa fa-users" aria-hidden="true"></i> THE CORE TEAM</h2><hr><br>
+    <div  id="Team" class="team scrolling">
+      <div style="color:#ec9316">
+        <div class="container" style="background:#cdcab5"><br>
+          <h2 data-aos="flip-down" class="text-center"><i class="fa fa-users" aria-hidden="true"></i> THE CORE TEAM</h2><hr><br>
 
-        <div class="row">
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img  src="asserts/images/team/adrish.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Adrish</h5>
-            <b  id="cardText">President</b><br>
-            <a href="https://fb.com/rick.dey.1998"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/captain-pool"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://linkedin.com/in/captain-pool"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/abhik.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Abhik</h5>
-            <b  id="cardText">Vice President</b><br>
-            <a href="https://www.facebook.com/abhik.banerjee.58"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/abhik-99"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/abhik-banerjee-591081164/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/soumit.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Soumit</h5>
-            <b  id="cardText">Manager</b><br>
-            <a href="https://www.facebook.com/odriend"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/soumitsarkar"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/soumitsarkar97/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/shahid.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Shahid</h5>
-            <b  id="cardText">Technical Lead</b><br>
-            <a href="https://facebook.com/dshahid380/"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/dshahid380"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://linkedin.com/in/dshahid380/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/anirban.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Anirban</h5>
-            <b  id="cardText">Relationship Head</b><br>
-            <a href="https://m.facebook.com/anirban.banerjee.79069?ref=bookmarks"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/Anb91"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/anirban-banerjee-370a75153"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/abhirupdeb.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Abhirup</h5>
-            <b  id="cardText">Promotion Lead</b><br>
-            <a href="https://m.facebook.com/profile.php?ref=bookmarks"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/abhirup-deb"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/abhirup-deb-84656717b/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
+          <div class="row">
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img  src="asserts/images/team/adrish.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Adrish</h5>
+              <b  id="cardText">President</b><br>
+              <a href="https://fb.com/rick.dey.1998"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/captain-pool"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/in/captain-pool"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/abhik.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Abhik</h5>
+              <b  id="cardText">Vice President</b><br>
+              <a href="https://www.facebook.com/abhik.banerjee.58"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/abhik-99"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/abhik-banerjee-591081164/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/soumit.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Soumit</h5>
+              <b  id="cardText">Manager</b><br>
+              <a href="https://www.facebook.com/odriend"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/soumitsarkar"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/soumitsarkar97/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/shahid.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Shahid</h5>
+              <b  id="cardText">Technical Lead</b><br>
+              <a href="https://facebook.com/dshahid380/"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/dshahid380"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/in/dshahid380/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/anirban.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Anirban</h5>
+              <b  id="cardText">Relationship Head</b><br>
+              <a href="https://m.facebook.com/anirban.banerjee.79069?ref=bookmarks"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/Anb91"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/anirban-banerjee-370a75153"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/abhirupdeb.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Abhirup</h5>
+              <b  id="cardText">Promotion Lead</b><br>
+              <a href="https://m.facebook.com/profile.php?ref=bookmarks"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/abhirup-deb"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/abhirup-deb-84656717b/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!---End Core Team-->
+      <!---End Core Team-->
     <!--Developer Team-->
-    <div style="color:rgba(25, 181, 254, 1)" id="Team" class="team scrolling">
-      <div class="container" style="background:rgba(25, 181, 254, 0.1)"><br>
-        <h2 data-aos="flip-down" class="text-center"><i class="fa fa-users" aria-hidden="true"></i> THE DEVELOPER TEAM</h2><hr><br>
+      <div style="color:#ec9316" id="Team" class="team scrolling">
+        <div class="container" style="background:#cdcab5"><br>
+          <h2 data-aos="flip-down" class="text-center"><i class="fa fa-users" aria-hidden="true"></i> THE DEVELOPER TEAM</h2><hr><br>
 
-        <div class="row">
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/arnab.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Arnab</h5>
-            <b  id="cardText">Lead Designer</b><br>
-            <a href="https://www.facebook.com/arnablp.chanda"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/Arnie09"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/arnab-chanda-aa671017a/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
+          <div class="row">
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6" >
+              <img src="asserts/images/team/saujanya.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Saujanya</h5>
+              <b  id="cardText">Advisory</b><br>
+              <a href="https://fb.com/thecrazyphysicist369"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/thecrazyphysicist369"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/arnab.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Arnab</h5>
+              <b  id="cardText">Lead Designer</b><br>
+              <a href="https://www.facebook.com/arnablp.chanda"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/Arnie09"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/arnab-chanda-aa671017a/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/anurag.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Anurag</h5>
+              <b  id="cardText">Lead Coordinator</b><br>
+              <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.github.com/anuragsingh228"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/anurag-singh-997461163"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/sohel.jpeg" alt="team_photo" class="rounded-circle">
+              <h5 id="cardText">Sohel</h5>
+              <b  id="cardText">Web Developer</b><br>
+              <a href="https://www.facebook.com/SohelRajaMolla.Rohan"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/SohelRaja"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/sohel-raja-molla-1a5742170/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/argha.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Arghadip</h5>
+              <b  id="cardText">Web Developer</b><br>
+              <a href="https://www.facebook.com/arghadip.chakraborty.568"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/arghac14"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/arghadip-chakraborty-5064a7170"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/aniket.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Aniket</h5>
+              <b  id="cardText">Web Developer</b><br>
+              <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/dhruba.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Dhruba</h5>
+              <b  id="cardText">Hardware Expert</b><br>
+              <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="#"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/aniket_jha.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Aniket</h5>
+              <b  id="cardText">TA / Developer </b><br>
+              <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.github.com/aniketjha1729"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/aniketjha1729"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/sourav.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Sourav</h5>
+              <b  id="cardText">TA / Developer </b><br>
+              <a href="https://www.facebook.com/sav.dutt"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/Zeocode"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/sourav-dutta-646035182/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/sharad.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Sharad</h5>
+              <b  id="cardText">TA / Developer </b><br>
+              <a href="https://m.facebook.com/sharad.jain.9216"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/sharad16j"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/sharad-baid-299747170"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/sankha.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Shankhadeep</h5>
+              <b  id="cardText">TA / Developer </b><br>
+              <a href="https://www.facebook.com/profile.php?id=100006776687613"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/shankha2018"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/mwlite/me"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/devjeet.jpeg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Devjeet</h5>
+              <b  id="cardText">TA / Developer </b><br>
+              <a href="https://m.facebook.com/devjeet.roy.9699"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/devjeetroy98"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/devjeet-roy-219941170/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
+            <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
+              <img src="asserts/images/team/penguin.jpg" alt="team_photo" class="rounded-circle">
+              <h5  id="cardText">Agniswar</h5>
+              <b  id="cardText">TA / Developer </b><br>
+              <a href="https://www.facebook.com/agniswar.roy.18"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://github.com/Agniswar123"><i class="social fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/agniswar-roy-14296b170/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <hr class="style-two">
+            </div>
           </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/anurag.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Anurag</h5>
-            <b  id="cardText">Lead Coordinator</b><br>
-            <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://www.github.com/anuragsingh228"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/anurag-singh-997461163"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
+        </div>
+      </div>
+      <!---End Developer Team-->
+    </div><hr>
+    <!-- Gallery start-->
+    <div id="Gallery" class="gallery scrolling"><br><br>
+      <h1 style="color:#ec9316" data-aos="flip-down" class="text-center"><i class="fa fa-image" aria-hidden="true"></i> GALLERY</h1><br><br>
+      <div style="max-width:800px; margin:0 auto;">
+        <div id="myskdslider">
+          <div class="slide">
+              <img src="asserts/images/gallery/linux_image.jpg" />
+              <!--Slider Description example-->
+              <div class="slide-desc">
+                <h2>Slider Title 1</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here.</p>
+              </div>
           </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6" >
-            <img src="asserts/images/team/saujanya.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Saujanya</h5>
-            <b  id="cardText">Advisory</b><br>
-            <a href="https://fb.com/thecrazyphysicist369"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/thecrazyphysicist369"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="#"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
+          <div class="slide">
+            <img src="asserts/images/gallery/penguinFace.jpg" />
+             <div class="slide-desc">
+              <h2>Slider Title 2</h2>
+              <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here.</p>
+            </div>
           </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/aniket.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Aniket</h5>
-            <b  id="cardText">Web Developer</b><br>
-            <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="#"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
+          <div class="slide">
+            <img src="asserts/images/gallery/linux_image.jpg" />
+            <div class="slide-desc">
+              <h2>Slider Title 3</h2>
+              <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here.</p>
+            </div>
           </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/argha.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Arghadip</h5>
-            <b  id="cardText">Web Developer</b><br>
-            <a href="https://www.facebook.com/arghadip.chakraborty.568"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/arghac14"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/arghadip-chakraborty-5064a7170"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/sohel.jpeg" alt="team_photo" class="rounded-circle">
-            <h5 id="cardText">Sohel</h5>
-            <b  id="cardText">Web Developer</b><br>
-            <a href="https://www.facebook.com/SohelRajaMolla.Rohan"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/SohelRaja"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/sohel-raja-molla-1a5742170/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/dhruba.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Dhruba</h5>
-            <b  id="cardText">Hardware Expert</b><br>
-            <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="#"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/aniket_jha.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Aniket</h5>
-            <b  id="cardText">TA / Developer </b><br>
-            <a href="#"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://www.github.com/aniketjha1729"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/aniketjha1729"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-left" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/sourav.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Sourav</h5>
-            <b  id="cardText">TA / Developer </b><br>
-            <a href="https://www.facebook.com/sav.dutt"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/Zeocode"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/sourav-dutta-646035182/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/sharad.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Sharad</h5>
-            <b  id="cardText">TA / Developer </b><br>
-            <a href="https://m.facebook.com/sharad.jain.9216"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/sharad16j"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/sharad-baid-299747170"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/sankha.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Shankhadeep</h5>
-            <b  id="cardText">TA / Developer </b><br>
-            <a href="https://www.facebook.com/profile.php?id=100006776687613"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/shankha2018"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/mwlite/me"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/devjeet.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Devjeet</h5>
-            <b  id="cardText">TA / Developer </b><br>
-            <a href="https://m.facebook.com/devjeet.roy.9699"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/devjeetroy98"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/devjeet-roy-219941170/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card col-lg-4 col-md-4 col-6">
-            <img src="asserts/images/team/penguin.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Agniswar</h5>
-            <b  id="cardText">TA / Developer </b><br>
-            <a href="https://www.facebook.com/agniswar.roy.18"><i class="social fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/Agniswar123"><i class="social fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/agniswar-roy-14296b170/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
-            <hr class="style-two">
+          <div class="slide">
+            <img src="asserts/images/gallery/penguinFace.jpg" />
+            <div class="slide-desc">
+              <h2>Slider Title 4</h2>
+              <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!---End Developer Team-->
-    <!--Coordinator Team
-    <div style="color:rgba(25, 181, 254, 1)" class="team scrolling">
-      <div  class="container" style="background:rgba(25, 181, 254, 0.1)"><br>
-        <h2 data-aos="flip-down" class="text-center"><i class="fa fa-users" aria-hidden="true"></i> THE COORDINATOR TEAM</h2><hr><br>
-
-        <div class="row">
-          <div data-aos="flip-right" class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/team/sharad.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Sharad Baid</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/team/devjeet.jpeg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Devjeet Roy</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/team/penguin.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">Agniswar Roy</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div data-aos="flip-right" class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-           <div class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div>
-          <div class="my_card_co col-lg-2 col-md-2 col-6">
-            <img src="asserts/images/linux_image.jpg" alt="team_photo" class="rounded-circle">
-            <h5  id="cardText">GNX</h5>
-            <b  id="cardText">Coordinator</b><hr class="style-two">
-          </div> 
-        </div>
-      </div>
-    </div>-->
-    <!---End Coordinatop Team-->
-
+    <!--- Gallery end-->
     <!--Footer Start-->
     <div class="footer" id="footer">
       <div class="container">
           <div class="text-center">
             <h5>Designed By</h5>
-            <p class="text-center"><a href="https://arghac14.github.io">Arghadip </a> & <a href="https://sohelraja.github.io"> Sohel</a></p>
+            <p class="text-center our-name"><a href="https://arghac14.github.io">Arghadip </a> & <a href="https://sohelraja.github.io"> Sohel</a></p>
           </div><hr>
           <div class="text-center">
             <h4>Get In Touch</h4>
@@ -424,16 +359,11 @@
 
 
     <script src="asserts/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="asserts/js/libs/slider/skdslider.min.js"></script>
     <script src="asserts/js/libs/bootstrap.min.js"></script>
     <script src="asserts/js/libs/wow.min.js"></script>
     <script src="asserts/js/libs/scrollwatch.js"></script>
     <script src="asserts/js/main.js"></script>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-      AOS.init();
-    </script>
-    </body>
-    </html>
+  </body>
+</html>

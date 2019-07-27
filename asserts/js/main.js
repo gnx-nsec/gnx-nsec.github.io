@@ -9,41 +9,16 @@ function myToggler(e){
         myEvent.className = 'btn-open';
     }
 }
-/*..............................Animation with wow.js and animation.css..............................*/
-new WOW().init();
-/*
-// carousel
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}*/
-/*.......................................Scrolling activation effect..........................................*/
 $(function(){
+  AOS.init();
   $('.scrolling').scrollWatchMapTo('nav ul li a');
+  $('#myskdslider').skdslider({
+      slideSelector: '.slide',
+      delay:5000, 
+      animationSpeed: 1000,
+      showNextPrev:true,
+      showPlayButton:false,
+      autoSlide:true,
+      animationType:'sliding'
+    });
 });
