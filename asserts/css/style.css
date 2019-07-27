@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 /* To  disable the navbar button*/
 button, html [type="button"], [type="reset"], [type="submit"] {
@@ -34,14 +34,17 @@ p{
 
 /*Navigation*/
 .navbar{
-    background: #222222 !important;
+    /*background: #222222 !important;*/
+    background: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    box-shadow: 0 0px 3px black;
     transition: 1s;
 }
 nav ul li a{
     position: relative;
-    color: #fff;
+    /*color: #fff;*/
+    color:#000000;
     font-size: 20px;
     text-decoration: none;
     opacity: 0.7;
@@ -49,7 +52,8 @@ nav ul li a{
     transition: all .5s ease-in-out;
 }
 nav ul li a:hover{
-    color:#fff;
+    /*color:#fff;*/
+    color:black;
     text-decoration: none;
     opacity: 1;
     transform: scale(1.10);
@@ -59,7 +63,8 @@ nav ul li a::after{
     position: absolute;
     width: 90%;
     height: 2px;
-    background: #fff;
+    /*background: #fff;*/
+    background: black;
     left: 4px;
     top: 20px;
     bottom: 20px;
@@ -71,7 +76,8 @@ nav ul li a:hover::after{
     transform: scale(1);
 }
 nav ul li a.active{
-  color:#fff;
+  /*color:#fff;*/
+  color:black;
   background: transparent;
   text-decoration: none;
   opacity: 1;
@@ -83,30 +89,35 @@ nav ul li a.active::after{
     background-color: transparent !important;
 }
 .navbar-brand{
-    color:#fff !important;
+    /*color:#fff !important;*/
+    color: black;
 }
 /*Toggle bar*/
 .btn-open:after{
 	font-family: "FontAwesome";
     content: "\f0c9";
     font-size: 40px;
-	color:white;
+    /*color:#fff !important;*/
+	color:black;
 	transition: color .2s;
 }
 .btn-open:hover:after{
-	color:#fff;
+	/*color:#fff;*/
+  color:black;
     opacity: 1;
 }
 .btn-close:after{
 	font-family: "FontAwesome";
     content: "\f00d";
     font-size: 40px;
-    color:white;
+    /*color:#fff !important;*/
+    color:black;
     opacity: 0.7;
 	transition: color .2s;
 }
 .btn-close:hover:after{
-    color:#fff;
+    /*color:#fff;*/
+    color: black;
     opacity: 1;
 }
 p{
@@ -127,7 +138,10 @@ p{
 }
 /*Home*/
 .header{
-
+    /*background: url(asserts/images/deskPic.png); 
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background:rgba(255,255,255,0.2);
     display: cover;
     min-height: 100vh;
     max-height: auto;
@@ -136,6 +150,18 @@ p{
     text-align: center;
     overflow: auto;
 
+}
+#intro{
+  background:white;
+  height:auto;
+  
+}
+.header i{
+  color: black;
+  transition: 0.5s;
+}
+.header i:hover{
+  opacity: 0.5; 
 }
 .header .header-content{
     margin-top: 10%;
@@ -196,12 +222,18 @@ p{
     color: #4c4c4c;
 }
 .team img{
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     margin-top: 20px;
     cursor: pointer;
     transition: all .2s ease-in;
     transform: scale(1);
+}
+@media(min-width: 500px){
+  .team img{
+    height: 125px;
+    width: 125px;
+  }
 }
 .team .social{
   height: 30px;
@@ -215,7 +247,14 @@ p{
 .team a:hover .social{
   background-color: #222222;
 }
-
+@media(max-width: 500px){
+  .team .social{
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  font-size: 10px;
+}
+}
 .my_card_co img{
   height: 120px;
   width: 120px;

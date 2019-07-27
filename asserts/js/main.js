@@ -11,7 +11,7 @@ function myToggler(e){
 }
 /*..............................Animation with wow.js and animation.css..............................*/
 new WOW().init();
-
+/*
 // carousel
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -42,7 +42,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-}
+}*/
 /*.......................................Scrolling activation effect..........................................*/
 $(function(){
   $('.scrolling').scrollWatchMapTo('nav ul li a');
