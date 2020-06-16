@@ -22,6 +22,7 @@ Founding Members / Developers.
 8. Dhruba Sengupta.
 9. MD. Shahid.
 10. Sharad Baid.
+11. Sohel Raja Molla.
 
 The Legacy Site is hosted at [GNX-Legacy](https://gnx-nsec.github.io/)
 
